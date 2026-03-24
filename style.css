@@ -1,0 +1,158 @@
+body {
+    background: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Container */
+.cv-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #a56abd, #6e3482);
+}
+
+/* Avatar */
+.profile-wrapper {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #a56abd, #6e3482);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    background: white;
+}
+
+/* Sidebar */
+.sidebar {
+    color: white;
+    padding: 30px;
+}
+
+/* Section title */
+.section-title {
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #a56abd;
+    color: #6e3482;
+    display: inline-block;
+}
+
+/* Content */
+.content {
+    margin-top: 50px;
+    padding: 30px;
+    background: white;
+    border-top-left-radius: 24px;
+    box-shadow: -8px -8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills */
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+
+.skill-item span {
+    width: 50%;
+    font-weight: 500;
+}
+
+.skill-bar {
+    flex: 1;
+    height: 12px;
+    background: #ddd;
+    border-radius: 8px;
+}
+
+.skill-fill {
+    height: 100%;
+    background: #a56abd;
+    border-radius: 8px;
+    color: white;
+    text-align: end;
+    font-size: 8px;
+    padding-right: 4px;
+}
+
+.small-text {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Print */
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    .cv-container {
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .sidebar {
+        background: linear-gradient(to bottom, #a56abd, #6e3482) !important;
+        color: white !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .section-title {
+        border-bottom: 2px solid #a56abd;
+    }
+
+    .profile-wrapper {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* * {
+        page-break-inside: avoid;
+    } */
+
+    h4,
+    h5,
+    p,
+    li {
+        page-break-inside: avoid;
+    }
+
+    ul {
+        page-break-inside: auto;
+    }
+
+    .skill-item {
+        page-break-inside: avoid;
+    }
+}
+
+@page {
+    size: A4;
+    margin: 10mm;
+}
+
+p {
+    margin: 0 0 8px;
+}
+
+.text-sec{
+    font-weight: 500;
+    color: #a56abdaa;
+}
