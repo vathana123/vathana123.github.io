@@ -3,180 +3,238 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Chorn Vathana CV</title>
-
-    <!-- Bootstrap -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-     <link rel="stylesheet" href="bootstrap.min.css">
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chorn Vathana | Personal Website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
 </head>
 
-<body>
+<body class="site-body">
+    <header class="site-header">
+        <nav class="container d-flex justify-content-between align-items-center py-3">
+            <a class="site-brand" href="index.html">Chorn Vathana</a>
+            <div class="nav-links d-flex align-items-center gap-3">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="cv.html">CV</a>
+                <a class="nav-link" href="projects.html">Projects</a>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Print Button -->
-    <div class="text-end p-3 no-print">
-        <button onclick="window.print()" class="btn btn-primary">
-            <i class="fa fa-download"></i> Download PDF
-        </button>
-    </div>
-
-    <div class="cv-container row g-0">
-
-        <!-- Sidebar -->
-        <div class="col-md-4 sidebar">
-
-            <!-- Profile Image -->
-            <div class="mb-3 text-center">
-                <div class="profile-wrapper">
-                    <img src="photo_2026-04-06_09-32-53.jpg" alt="Profile" class="profile-img">
+    <main>
+        <section class="hero-section container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <span class="hero-badge">
+                        <h3><strong>Chorn Vathana</strong> - Full Stack Developer</h3>
+                    </span>
+                    <h1 class="hero-title">Building reliable software for web, desktop, and mobile.</h1>
+                    <p class="hero-text">
+                        I am Chorn Vathana, a developer focused on practical systems that improve daily operations.
+                        I enjoy turning complex business workflows into simple digital products.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 mt-4" justify-content-center justify-content-md-start>
+                        <a class="btn btn-main" href="cv.html">View My CV</a>
+                        <a class="btn btn-outline-main" href="projects.html">See Projects</a>
+                        <div id="contact-list" class="contact-icon-list" aria-label="Contact links"></div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="hero-image-wrap">
+                        <img src="images/photo_2026-04-06_09-32-53.jpg" alt="Chorn Vathana portrait" class="hero-image">
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <h2 class="text-center">Chorn Vathana</h2>
-            <p class="text-center">Full Stack Developer</p>
+        <section id="contact" class="container contact-strip">
+            <div class="contact-basic">
+                <p class="contact-basic-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+85516671697">+855 16 671 697</a>
+                </p>
+                <p class="contact-basic-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Phnom Penh, Cambodia</span>
+                </p>
+            </div>
+        </section>
 
-            <hr>
+        <section id="about" class="container section-block">
+            <div class="section-head">
+                <h2>About Me</h2>
+            </div>
+            <div class="row g-3">
+                <div class="col-12">
+                    <div class="editor-card about-card">
+                        <h3 class="about-title">Profile</h3>
+                        <p>
+                            Passionate Full Stack Developer with 3 years of experience in building web, desktop, and
+                            mobile
+                            applications. Skilled in Laravel, Spring Boot, Flutter, and system architecture design.
+                            Strong
+                            problem-solving mindset and experience working on financial and enterprise systems.
+                        </p>
+                    </div>
+                </div>
 
-            <!-- Contact -->
-            <h5 class="section-title text-white">Contact</h5>
-            <p><i class="fa fa-envelope me-2"></i> vatana749@gmail.com</p>
-            <p><i class="fa fa-phone me-2"></i> +855 16 671 697</p>
-            <p><i class="fa fa-location-dot me-2"></i> Phnom Penh, Cambodia</p>
+                <div class="col-12">
+                    <div class="editor-card about-card">
+                        <h3 class="about-title">Experience</h3>
 
-            <!-- Skills -->
-            <h5 class="section-title text-white">Skills</h5>
+                        <div class="experience-block">
+                            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                                <h4 class="about-subtitle">Senior Developer - BNKC MFI Plc.</h4>
+                                <p class="about-date">Aug 2022 - Present</p>
+                            </div>
+                            <ul class="about-list">
+                                <li><strong>BNKC Website Development</strong>: Built and maintained the official BNKC
+                                    website using Laravel with MySQL, and managed content as an administrator.</li>
+                                <li><strong>Asset Management System</strong>: Developed a company asset system using
+                                    Spring Boot (REST APIs), PostgreSQL, the MyBatis framework, OAuth + JWT, and Flutter
+                                    Desktop.</li>
+                                <li><strong>Form Approval System</strong>: Replaced paper-based approvals with a Laravel
+                                    system supporting dynamic forms and flexible workflows. Managed users with
+                                    role-based permissions and flexible approval settings.</li>
+                                <li><strong>Core System (Pre-development)</strong>: Contributed as a Full Stack
+                                    Developer using Spring Boot (REST APIs), PostgreSQL, the MyBatis framework, OAuth +
+                                    JWT, and Flutter. Implemented user management, loan schedule simulation, and system
+                                    settings.</li>
+                                <li><strong>Employee Mobile App</strong>: Collaborated on an Android app (Jetpack
+                                    Compose Kotlin) for loan registration. Focused on UI implementation.</li>
+                                <li><strong>Sub-systems Development</strong>: Built internal tools including car
+                                    booking, meeting room booking, eDocument systems, and a company internal complaint
+                                    system.</li>
+                            </ul>
+                        </div>
 
-            <div class="skill-item">
-                <span>Kotlin</span>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:70%">70%</div>
+                        <div class="experience-block">
+                            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                                <h4 class="about-subtitle">Instructor - ETEC Center</h4>
+                                <p class="about-date">Oct 2021 - Aug 2022</p>
+                            </div>
+                            <p>Taught short courses in programming languages.</p>
+                            <ul class="about-list">
+                                <li><strong>Java</strong>: Taught 3 courses covering Java basics, advanced Java, OOP,
+                                    Java Swing desktop UI, JasperReports, and project-based learning.</li>
+                                <li><strong>C#</strong>: Taught 1 course covering C# basics, advanced C#, C# Windows
+                                    Forms UI, SAP Crystal Reports, and project-based learning.</li>
+                                <li><strong>C & C++</strong>: Taught 6 courses covering C programming basics, C++ OOP,
+                                    and project-based learning.</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-block">
+                            <h4 class="about-subtitle">Course Study Project</h4>
+                            <ul class="about-list">
+                                <li><strong>Phone Shop</strong>: Studied Spring Boot through online courses from Piset
+                                    Java School. Built a Phone Shop project using Spring Boot, MySQL, and JPA/Hibernate.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="editor-card about-card">
+                        <h3 class="about-title">Skills</h3>
+                        <ul class="about-list about-compact">
+
+                            <li class="skill-item">
+                                <span>Kotlin</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width:70%">70%</div>
+                                </div>
+                            </li>
+
+                            <li class="skill-item">
+                                <span>Flutter</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width:95%">95%</div>
+                                </div>
+                            </li>
+
+                            <li class="skill-item">
+                                <span>Laravel</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width:95%">95%</div>
+                                </div>
+                            </li>
+
+                            <li class="skill-item">
+                                <span>Spring Boot</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width:95%">95%</div>
+                                </div>
+                            </li>
+
+                            <li class="skill-item">
+                                <span>Web Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width:99%">99%</div>
+                                </div>
+                            </li>
+
+                            <li class="skill-item">
+                                <span>DBMS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width:85%">85%</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="editor-card about-card">
+                        <h3 class="about-title">Education</h3>
+                        <ul class="about-list about-compact">
+                            <li><strong>2019 - 2023</strong>: Bachelor's Degree in MIS - Phnom Penh International
+                                University</li>
+                            <li><strong>2013 - 2019</strong>: Hun Sen Peam Chi Kang High School</li>
+                            <li><strong>2007 - 2013</strong>: Hun Sen Peam Chi Kang Primary School</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="editor-card about-card">
+                        <h3 class="about-title">Languages</h3>
+                        <ul class="about-list about-compact">
+                            <li>Khmer: Excellent</li>
+                            <li>English: Good</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="editor-card about-card">
+                        <h3 class="about-title">References</h3>
+                        <ul class="about-list about-compact">
+                            <li><strong>Heng Pheakna</strong>: Director of ETEC Center - +855 96 226 8884</li>
+                            <li><strong>An Sokkhak</strong>: Head of IT Department at BNKC MFI Plc. - +855 15 797 915
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        </section>
+    </main>
 
-            <div class="skill-item">
-                <span>Flutter</span>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:90%">90%</div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <span>Laravel</span>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:90%">90%</div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <span>Spring Boot</span>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:90%">90%</div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <span>Web Design</span>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:98%">98%</div>
-                </div>
-            </div>
-
-            <div class="skill-item">
-                <span>DBMS</span>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:75%">75%</div>
-                </div>
-            </div>
-
-            <!-- Languages -->
-            <h5 class="section-title text-white">Languages</h5>
-
-            <p><strong>Khmer</strong>: <span style="color: greenyellow;">Excellent</span></p>
-            <p><strong>English</strong>: <span style="color: greenyellow;">Good</span></p>
-
-            <!-- References -->
-            <h5 class="section-title text-white">References</h5>
-
-            <p class="mb-3"><strong>Heng Pheakna</strong>: Director of Etect Center.<br> <i
-                    class="fa fa-phone me-2"></i> +855 96 226 8884 </p>
-            <p><strong>An Sokkhak</strong>: Head of IT Department at BNKC MIF Plc.<br> <i class="fa fa-phone me-2"></i>
-                +855 15 797 915</p>
+    <footer class="site-footer">
+        <div class="container py-3 d-flex flex-wrap justify-content-between gap-2">
+            <span>Copyright 2026 Chorn Vathana</span>
+            <span>Personal Portfolio Website</span>
         </div>
+    </footer>
 
-        <!-- Content -->
-        <div class="col-md-8 content text-secondary">
-
-            <!-- Profile -->
-            <h5 class="section-title">Profile</h5>
-            <p style="text-align: justify;">
-                Passionate Full Stack Developer with 3 years of experience in building web, desktop, and mobile
-                applications. Skilled in Laravel, Spring Boot, Flutter, and system architecture design. Strong
-                problem-solving mindset and experience working on financial and enterprise systems.
-            </p>
-            <!-- Experience -->
-            <h5 class="section-title">Experience</h5>
-
-            <div class="d-flex justify-content-between">
-                <h6 class="fw-bold">Senior Developer - BNKC MFI Plc.</h6>
-                <p class="small-text">Aug 2022 - Present</p>
-            </div>
-            <ul>
-                <li>
-                    <span style="font-weight: 500;">BNKC Website Development</span>:
-                    Built and maintained the official BNKC website using Laravel, and managed content as an
-                    administrator.
-                </li>
-                <li>
-                    <span style="font-weight: 500;">Asset Management System</span>:
-                    Developed a company asset system using Spring Boot (REST APIs) and Flutter Desktop.
-                </li>
-                <li>
-                    <span style="font-weight: 500;">Form Approval System</span>:
-                    Replaced paper-based approvals with a Laravel system supporting dynamic forms and flexible
-                    workflows.
-                </li>
-                <li>
-                    <span style="font-weight: 500;">Core System (Pre-development)</span>:
-                    Contributed as a Full Stack Developer using Spring Boot and Flutter, implemented user management and
-                    system settings.
-                </li>
-                <li>
-                    <span style="font-weight: 500;">Employee Mobile App</span>:
-                    Collaborated on Android app (Jetpark Compose Kotlin) for loan registration; focused on UI implementation.
-                </li>
-                <li>
-                    <span style="font-weight: 500;">Sub-systems Development</span>:
-                    Built internal tools including Car Booking, Meeting Room Booking, and eDocument systems.
-                </li>
-            </ul>
-
-            <div class="d-flex justify-content-between">
-                <h6 class="fw-bold">Instructor - Etec Center</h6>
-                <p class="small-text">Oct 2021 - Aug 2022</p>
-            </div>
-            <p>
-                Taught short courses in programming languages.
-            </p>
-            <ul>
-                <li><span style="font-weight: 500;">Java</span>: 3 courses</li>
-                <li><span style="font-weight: 500;">C#</span>: 1 course</li>
-                <li><span style="font-weight: 500;">C & C++</span>: 6 courses</li>
-            </ul>
-
-            <!-- Education -->
-            <h5 class="section-title">Education</h5>
-            <p><span style="font-weight: 700;">2019 - 2023</span>: Bachelor Degree of MIS - Phnom Penh International
-                University</p>
-            <p><span style="font-weight: 700;">2013 - 2019</span>: Hun Sen Peam Chi Kang High School</p>
-            <p><span style="font-weight: 700;">2007 - 2013</span>: Hun Sen Peam Chi Kang Primary School</p>
-        </div>
-    </div>
-
-    <script src="bootstrap.bundle.min.js"></script>
+    <script src="js/site.js"></script>
 </body>
 
 </html>
